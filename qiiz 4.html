@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <script>
+
+        var user = [
+            {
+                name: "Jack",
+                pass: 123456
+            },
+            {
+                name: "Ali",
+                pass: 123456
+            },
+            {
+                name: "Ahmed",
+                pass: 789000
+            }
+        ]
+        console.log(user)
+
+        // ~ Add new user in the users array
+
+        function adduser(user1, pass1) {
+            data = {
+                name: user1,
+                pass: pass1
+            }
+            user.push(data)
+            console.log("new user added")
+            console.log(user)
+        }
+        adduser("Arsalan", 123456789)
+        adduser("Asad", 99)
+
+        // ~ get user by his email or id (use any one email or id)
+
+
+        for (i = 0; i <= user.length; i++) {
+            console.log(user[i])
+        }
+
+        // ~ delete user from users data
+
+        // function deluser(user1,pass1){
+        //     data = {
+        //         name: user1,  
+        //         pass: pass1  
+        //     } 
+        //     user.pull(data)
+        //     console.log("new user del")
+        //     console.log(user)
+
+        // }
+        // deluser("Arsalan", 123456789)
+        // deluser("Asad", 99)
+
+        // Q2)  Make a grading system which will print your grade:
+
+        var check = 92;
+        if (check >= 90) {
+            console.log("Congrats A+ grade");
+        }
+        else if (check >= 75) {
+            console.log("Congrats A grade");
+        }
+        else if (check > 50) {
+            console.log("Congrats C grade");
+        }
+        else {
+            console.log("F grade")
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
